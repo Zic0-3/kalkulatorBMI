@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Button fx:id="calculateButton" layoutX="137.0" layoutY="483.0" mnemonicParsing="false" onAction="#calculate" text="Oblicz" />
+        <Button fx:id="resetButton" layoutX="249.0" layoutY="483.0" mnemonicParsing="false" onAction="#reset" text="Reset" />
+        <CheckBox fx:id="bmrCheckbox" layoutX="139.0" layoutY="449.0" mnemonicParsing="false" text="BMR" />
+        <CheckBox fx:id="bmiCheckbox" layoutX="251.0" layoutY="449.0" mnemonicParsing="false" text="BMI" />
+        <TextField fx:id="heightTextField" layoutX="146.0" layoutY="54.0" />
+        <TextField fx:id="weightTextField" layoutX="146.0" layoutY="108.0" />
+        <TextField fx:id="ageTextField" layoutX="146.0" layoutY="159.0" />
+        <Label layoutX="146.0" layoutY="29.0" text="Wzrost" />
+        <Label layoutX="146.0" layoutY="91.0" text="Waga" />
+        <Label layoutX="148.0" layoutY="142.0" text="Wiek" />
+        <Label fx:id="resultLabel" layoutX="140.0" layoutY="306.0" prefHeight="88.0" prefWidth="1920.0" />
+        <RadioButton fx:id="femaleRadioButton" layoutX="140.0" layoutY="211.0" mnemonicParsing="false" text="Kobieta">
+         <toggleGroup>
+            <ToggleGroup fx:id="sex" />
+         </toggleGroup></RadioButton>
+        <RadioButton fx:id="maleRadioButton" layoutX="140.0" layoutY="247.0" mnemonicParsing="false" text="Mężczyzna" toggleGroup="$sex" />
+    </children>
+</AnchorPane>
